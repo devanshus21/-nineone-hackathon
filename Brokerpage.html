@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broker Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            margin-top: 20px;
+        }
+        .logo img {
+            width: 150px;
+        }
+        .photo {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .property-data {
+            width: 80%;
+            margin-top: 20px;
+        }
+        .property-data table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .property-data th, .property-data td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        .property-data th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src='https://media.licdn.com/dms/image/C4D0BAQHgnxv5bQNQmw/company-logo_200_200/0/1630581707722/nineone_holdings_logo?e=1725494400&v=beta&t=NTy16wINb-Xv78KwfohGg4ubiepiqNFDMVpsndgWp6w' alt="Logo">
+    </div>
+    <div class="photo">
+        <img src="C:\Users\dsinc\Downloads\Bargraph.png" alt="Bar Graph: Area-wise Property Availability">
+    </div>
+    <div class="photo">
+        <img src="C:\Users\dsinc\Downloads\Pie chart.png" alt="Pie Chart: Area-wise Property Rates in Last 6 Months">
+    </div>
+    <div class="property-data">
+        <h2>Property Data</h2>
+        <table>
+            <tr>
+                <th>Area</th>
+                <th>Property Availability</th>
+                <th>Property Rate Change (%)</th>
+            </tr>
+            <tr>
+                <td>South Delhi</td>
+                <td>100</td>
+                <td>+10%</td>
+            </tr>
+            <tr>
+                <td>West Delhi</td>
+                <td>120</td>
+                <td>+15%</td>
+            </tr>
+            <tr>
+                <td>East Delhi</td>
+                <td>90</td>
+                <td>-5%</td>
+            </tr>
+            <tr>
+                <td>North Delhi</td>
+                <td>80</td>
+                <td>+20%</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

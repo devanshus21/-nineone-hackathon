@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: url('https://cdn.britannica.com/82/156482-131-AEEBFEFC/New-York-York.jpg') no-repeat center center fixed; 
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8);
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 150px;
+        }
+        .login-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .login-box input[type="text"], .login-box input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .login-box button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        .login-box button:hover {
+            background-color: #0056b3;
+        }
+        .login-box .links {
+            margin-top: 10px;
+        }
+        .login-box .links a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .login-box .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src='https://media.licdn.com/dms/image/C4D0BAQHgnxv5bQNQmw/company-logo_200_200/0/1630581707722/nineone_holdings_logo?e=1725494400&v=beta&t=NTy16wINb-Xv78KwfohGg4ubiepiqNFDMVpsndgWp6w' alt="Logo">
+        </div>
+        <div class="login-box">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button>Get Started</button>
+            <div class="links">
+                <a href="#">Create Account</a>
+                <a href="#">Need Help?</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

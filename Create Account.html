@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: url('https://cdn.britannica.com/82/156482-131-AEEBFEFC/New-York-York.jpg') no-repeat center center fixed; 
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8);
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 150px;
+        }
+        .registration-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        .registration-box input[type="text"], .registration-box input[type="password"], .registration-box input[type="date"], .registration-box select {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .registration-box button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        .registration-box button:hover {
+            background-color: #0056b3;
+        }
+        .registration-box .links {
+            margin-top: 10px;
+        }
+        .registration-box .links a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .registration-box .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src='https://media.licdn.com/dms/image/C4D0BAQHgnxv5bQNQmw/company-logo_200_200/0/1630581707722/nineone_holdings_logo?e=1725494400&v=beta&t=NTy16wINb-Xv78KwfohGg4ubiepiqNFDMVpsndgWp6w' alt="Logo">
+        </div>
+        <div class="registration-box">
+            <select required>
+                <option value="" disabled selected>Select Rent/Buy</option>
+                <option value="rent">Rent</option>
+                <option value="buy">Buy</option>
+            </select>
+            <input type="text" placeholder="Name" required>
+            <select required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="date" placeholder="Date of Birth" required>
+            <input type="text" placeholder="Work/Job" required>
+            <input type="number" placeholder="Number of Family Members" required>
+            <input type="number" placeholder="Budget" required>
+            <button>Register</button>
+            <div class="links">
+                <a href="#">Already have an account?</a>
+                <a href="#">Need Help?</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

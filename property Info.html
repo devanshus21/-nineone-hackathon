@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: url('https://cdn.britannica.com/82/156482-131-AEEBFEFC/New-York-York.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            margin-top: 20px;
+        }
+        .logo img {
+            width: 150px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+        h1 {
+            color: #0066cc;
+        }
+        .property-photo {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .small-photo {
+            width: 150px;
+            height: 100px;
+            margin-right: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .map-outline {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        .data-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .data-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src='https://media.licdn.com/dms/image/C4D0BAQHgnxv5bQNQmw/company-logo_200_200/0/1630581707722/nineone_holdings_logo?e=1725494400&v=beta&t=NTy16wINb-Xv78KwfohGg4ubiepiqNFDMVpsndgWp6w' alt="Logo">
+    </div>
+    <div class="container">
+        <h1>Property Detail</h1>
+        <img class="big photo" src="C:\Users\dsinc\Downloads\map.jpg" alt="Property Photo" width="500" height="300">
+        <div class="section-title">Additional Photos</div>
+        <div>
+            <img class="small-photo" src="C:\Users\dsinc\Downloads\parking.jpg" alt="Small Photo 1">
+            <img class="small-photo" src="C:\Users\dsinc\Downloads\building.jpg" alt="Small Photo 2">
+        </div>
+        <div class="section-title">People Interested/Viewed on Property (Last 7 Days)</div>
+        <ul class="data-list">
+            <li class="data-item">John Doe</li>
+            <li class="data-item">Jane Smith</li>
+            <li class="data-item">Michael Johnson</li>
+            <!-- Add more names as needed -->
+        </ul>
+        <div class="section-title">Apartment (Recent Purchase Number)</div>
+        <p>No. AP12345</p>
+    </div>
+</body>
+</html>
